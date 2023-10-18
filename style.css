@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header a i {
+    color: white;
+    padding: 0.5em;
+}
+
+ul,
+ol {
+    list-style: none;
+    
+}
+
+nav a,
+.end a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+header {
+    display: flex;
+    background-color: rgb(25, 24, 24);
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0 0 1em 1em;
+    justify-content: space-between;
+}
+
+
+
+nav ul {
+    display: flex;
+    gap: 1.1em;
+    padding-right: 5px;
+}
+
+nav ul li {
+    margin-right: 15px;
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+
+
+#img1 {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+#setup {
+    width: 100%;
+    height: 40em;
+}
+
+
+.acerca-de {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.personal {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 1.7em;
+    margin-right: 10px;
+    padding: 50px;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.escritorio {
+    height: 95%;
+    width: 95%;
+    margin-bottom: 5%;
+}
+
+footer {
+    font-size: 1.5em;
+    background-color: rgb(25, 24, 24);
+    border-radius: 1em 1em 0 0;
+    text-align: center;
+}
+
+.end {
+    padding: 0.5em;
+}
+
+.redes {
+    line-height: 1.7em;
+}
+
+.trabajos {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0px; 
+}
+
+section {
+    width: 100%;
+    background-color: rgb(245, 247, 250);
+}
+
+
+.bench {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 20%;
+    padding: 2em;
+    box-sizing: border-box;
+    font-size: 1.7em;
+}
+
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-radius: 1em 1em;
+    font-size: 1.7em;
+    
+}
+
+.consulta {
+    justify-content: center;
+    padding-left: 5%;
+    margin-left: -10%;
+}
+
+.consulta h1 {
+    padding-left: 15%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #251f1f;
+    border-radius: 15px;
+    width: 35rem;
+    padding: 10%;
+    margin-bottom: 10%;
+    margin-left: -20%;
+}
+
+form li {
+    margin-top: 1em;
+}
+
+form label {
+    display: inline-block;
+    text-align: right;
+    width: 20%;
+}
+
+form input,
+textarea {
+    width: 70%;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000;
+}
+
+
+textarea {
+    vertical-align: top;
+    height: 15em;
+}
+
+.button {
+    padding-left: 20%;
+}
+
+button {
+    margin-left: 0.5em;
+    font-size: 1em;
+    padding: 0.3em;
+}
+
+#contacto {
+    text-align: center;
+    font-size: 1.8em;
+    color: #e9a617;
+    
+}
+
+/* #check {
+    display: none;
+} */
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(251, 249, 249);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .acerca-de {
+        text-align: center;
+    }
+
+    /* nav ul {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(15, 15, 41);
+        top: 7em;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+        font-size: 0.8em;
+
+    } */
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 40px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .bench {
+        width: 80%;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 1.5em;
+    }
+
+    .escritorio {
+        width: 25em;
+        height: 200px;
+    }
+
+
+    .checkbtn {
+        display: block;
+    }
+
+    .trabajos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    #contacto {
+        padding-left: 4%;
+    }
+
+    .navbar {
+        height: 0vh;
+        position: absolute;
+        top: 6.6em;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+    
+        transition: all 0.5s;
+        overflow: hidden;
+      }
+    
+      .navbar ul.menu {
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+      }
+    
+      .navbar ul.menu li a:hover {
+        color: #b59a61;
+      }
+      /* ACTIVE */
+      .navbar.active {
+        height: 100vh;
+      }
+    
+      .navbar.active ul.menu {
+        opacity: 1;
+      }
+
+      .formulario {
+        margin: 0 auto;
+      }
+
+      form {
+        width: 90%;
+        margin-left: 0.5%;
+      }
+
+      label {
+        padding-right: 1em;
+      }
+
+      .consulta {
+        padding-left: 15%;
+      }
+
+      .consulta h1 {
+        text-align: center;
+        margin-left: -5%;
+      }
+
+      .formulario ul li {
+        display: block;
+      }
+
+      .button {
+        margin-left: -25%;
+      }
+
+      /* esto era funcionalidad sin JS para menú
+
+    /* #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: rgb(24, 24, 62);
+    } */
+}
